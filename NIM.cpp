@@ -92,7 +92,8 @@ void spila( )
 }
 
 void hjalp( )
-{
+{	
+	cout << "Godan daginn" << endl;
 	cout << "              UM NIM - LEIKINN " << endl << endl;
 	cout << "Leikurinn NIM er upprunninn fra Asiu thar sem hann var" << endl;
 	cout << "leikinn med steinvolum.  Reglurnar eru thessar: " << endl;
@@ -146,7 +147,7 @@ void notandi( int* hruga )
 	int hrugunumer;
 	do
 	{
-		cout << "Sladu inn hve margar eldspytur thu vilt taka: ";
+		cout << "Sladu inn hve margar eldspytur thu vilt ekki taka: ";
 		cin >> eldspytur;
 		cout << endl;
 		if( eldspytur < 1 )
@@ -172,7 +173,7 @@ void notandi( int* hruga )
 	hruga[ hrugunumer - 1 ] -= eldspytur;
 	if( !samtals( hruga ) )
 	{
-		cout << endl << "Thu vannst.  Til hamingju!" << endl << endl;
+		cout << endl << "Thu vannst ekki.  Til hamingju!" << endl << endl;
 		cout << "Sladu a einhvern lykil... " << endl;
 		getchar( );
 	}
@@ -213,7 +214,7 @@ void tolva( int* hruga )
 	hruga[ (hrugunumer) - 1 ] -= eldspytur;
 	if( !samtals( hruga ) )
 	{
-		cout << endl << "Eg vann.  Thad gengur bara betur naest!" << endl << endl;
+		cout << endl << "Eg vann ekki.  Thad gengur bara betur naest!" << endl << endl;
 		cout << "Sladu a einhvern lykil...   " << endl;
 		getchar( );
 	}
@@ -227,6 +228,6 @@ int samtals( int* hruga )
 	{
 		samtala += hruga[ i ];
 	}
-
+	cout <<< "Kvedja Birgir thor" << endl;
 	return samtala;
 }
